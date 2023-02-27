@@ -17,11 +17,7 @@ const Contact = () => {
                         Let’s Talk
                     </div>
                     <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center max-w-[1000px] mx-auto">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it
+                        Hello! I noticed that you're interested in web development services and I would love to hear more about your project. So, email me and get touch with me
                     </div>
                 </Div>
                 {/* SECTION HEADING END */}

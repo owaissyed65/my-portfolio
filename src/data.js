@@ -1,9 +1,7 @@
-import p1 from "./assets/project-1.png";
-import p2 from "./assets/project-2.png";
-import p3 from "./assets/project-3.png";
-import p4 from "./assets/project-4.png";
-import p5 from "./assets/project-5.png";
-import p6 from "./assets/project-6.png";
+import p1 from "./assets/p1.png";
+import p2 from "./assets/p2.png";
+import p3 from "./assets/p3.png";
+import p4 from "./assets/p4.png";
 
 export const filters = [
     {
@@ -26,33 +24,23 @@ export const filters = [
 
 export const projects = [
     {
-        name: "Join the Innovative Car Wash Service",
+        name: "Adams Envato Clone",
         image: p1,
-        tags: ["dashboard", "mobile-app"],
+        tags: ["dashboard", "website"],
     },
     {
-        name: "Your Luggage is in Safe Hands",
+        name: "Ecommerce Website",
         image: p2,
         tags: ["dashboard", "website"],
     },
     {
-        name: "The Art of Hiring",
+        name: "Technical Website",
         image: p3,
-        tags: ["mobile-app"],
+        tags: ["website"],
     },
     {
-        name: "We Are Solving Global Problems",
+        name: "From Redux",
         image: p4,
-        tags: ["mobile-app"],
-    },
-    {
-        name: "The English Tea Ceremony",
-        image: p5,
-        tags: ["website", "dashboard"],
-    },
-    {
-        name: "Saving Photo Memories",
-        image: p6,
         tags: ["website"],
     },
 ];
@@ -60,22 +48,22 @@ export const projects = [
 export const achievements = [
     {
         id: 1,
-        year: 80,
+        year: 10,
         description: "SUCCESSFULLY<br />COMPLETED<br />PROJECTS",
     },
     {
         id: 2,
-        year: 15,
+        year: 1,
         description: "YEARS OF<br />EXPERIENCE",
     },
     {
         id: 3,
-        year: 25,
+        year: 6,
         description: "TECHNOLOGIES",
     },
     {
         id: 4,
-        year: 70,
+        year: 0,
         description: "COMMUNITY<br />POSTS",
     },
 ];

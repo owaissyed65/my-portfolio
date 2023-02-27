@@ -9,13 +9,9 @@ import Achievements from "./Achievements";
 import Div from "./Div";
 
 // IMAGES
-import sk1 from "../assets/sk-1.png";
-import sk2 from "../assets/sk-2.png";
-import sk3 from "../assets/sk-3.png";
-import sk4 from "../assets/sk-4.png";
-import sk5 from "../assets/sk-5.png";
-import sk6 from "../assets/sk-6.png";
-import sk7 from "../assets/sk-7.png";
+import sk1 from "../assets/icon1.png";
+import sk2 from "../assets/icon2.png";
+import sk3 from "../assets/icon3.png";
 import sk8 from "../assets/sk-8.png";
 import sk9 from "../assets/sk-9.png";
 import sk10 from "../assets/sk-10.png";
@@ -44,14 +40,10 @@ const Skills = () => {
             {/* BACKGROUND ELEMENTS END */}
             <Wrapper>
                 {/* SKILL ICONS START */}
-                <Div className="grid grid-cols-4 gap-3 md:grid-cols-11 relative">
+                <Div className="grid grid-cols-4 gap-3 md:grid-cols-7 relative  ">
                     <SkillIcon path={sk1} />
                     <SkillIcon path={sk2} />
                     <SkillIcon path={sk3} />
-                    <SkillIcon path={sk4} />
-                    <SkillIcon path={sk5} />
-                    <SkillIcon path={sk6} />
-                    <SkillIcon path={sk7} />
                     <SkillIcon path={sk8} />
                     <SkillIcon path={sk9} />
                     <SkillIcon path={sk10} />
@@ -65,52 +57,41 @@ const Skills = () => {
                     <div className="md:max-w-[65%] flex flex-col gap-6 md:gap-10">
                         <Service
                             num="1"
-                            title="Ui/Ux Design"
-                            desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
+                            title="Mern Developer"
+                            desc="As a MERN (MongoDB, Express, React, Node.js) developer, I offer a comprehensive range of services to help clients bring their web development projects to life. With expertise in both front-end and back-end development, I am able to build robust, responsive, and scalable web applications that meet the unique needs of my clients."
                             data={[
-                                "Prototype",
+                                "Scalability",
                                 "Wireframe",
                                 "User Experience",
                                 "Prototype",
-                                "Prototype",
+                                "Maintenance",
                             ]}
                         />
                         <Service
                             num="2"
-                            title="Graphic Designing"
-                            desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
+                            title="Full Stack Development"
+                            desc="As a full-stack developer, I offer end-to-end web development services, from front-end design to back-end development and deployment. With expertise in a variety of programming languages, frameworks, and platforms, I am able to create custom web applications that meet the unique needs of my clients. "
                             data={[
-                                "Prototype",
+                                "Scalability",
                                 "Wireframe",
                                 "User Experience",
                                 "Prototype",
-                                "Prototype",
+                                "Maintenance",
                             ]}
                         />
                         <Service
                             num="3"
                             title="Frontend Development"
-                            desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
+                            desc="As a front-end developer, I specialize in creating visually stunning and intuitive user interfaces that enhance the user experience and engagement. With expertise in front-end technologies such as HTML, CSS, and JavaScript, as well as front-end frameworks such as React and Next"
                             data={[
-                                "Prototype",
+                                "Scalability",
                                 "Wireframe",
                                 "User Experience",
                                 "Prototype",
-                                "Prototype",
+                                "Maintenance",
                             ]}
                         />
-                        <Service
-                            num="4"
-                            title="Wordpress Development"
-                            desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
-                            data={[
-                                "Prototype",
-                                "Wireframe",
-                                "User Experience",
-                                "Prototype",
-                                "Prototype",
-                            ]}
-                        />
+
                     </div>
                     {/* SERVICES END */}
 

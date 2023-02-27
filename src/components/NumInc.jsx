@@ -16,7 +16,7 @@ function NumInc({ num }) {
 
     useEffect(() => {
         // const controls = !once
-        //     ? animate(count, isInView ? 100 : 0, {
+            // ? animate(count, isInView ? 100 : 0, {
         //           duration: 2,
         //           onComplete: () => setOnce(true),
         //       })

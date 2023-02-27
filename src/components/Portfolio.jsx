@@ -26,8 +26,7 @@ const Portfolio = () => {
                     Latest Projects
                 </div>
                 <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-[#CCCCCC] text-center">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    Here is my few projects.
                 </div>
             </Div>
             {/* SECTION HEADING END */}
@@ -37,11 +36,10 @@ const Portfolio = () => {
                 {filters.map((item, index) => (
                     <div
                         key={index}
-                        className={`bg-[#252525] rounded-lg py-[10px] px-[17px] text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] cursor-pointer whitespace-nowrap ${
-                            selectedTag === item.id
-                                ? "bg-[#EFB946] text-black"
-                                : ""
-                        }`}
+                        className={`bg-[#252525] rounded-lg py-[10px] px-[17px] text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] cursor-pointer whitespace-nowrap ${selectedTag === item.id
+                            ? "bg-[#EFB946] text-black"
+                            : ""
+                            }`}
                         onClick={() => filterHandler(item.id)}
                     >
                         {item.name}

@@ -42,7 +42,7 @@ const HeroBanner = () => {
                         <div className="w-[35px] h-[35px] rounded-full bg-[#252525] flex justify-center items-center">
                             <img src={gmailIcon} alt="" className="w-[18px]" />
                         </div>
-                        <div>jsdev@gmail.com</div>
+                        <div>owaissyed65@gmail.com</div>
                     </div>
                     <ul className="flex 2xl:text-[20px]">
                         <li
@@ -81,29 +81,26 @@ const HeroBanner = () => {
                     transition={{ duration: 0.5 }}
                 >
                     <h1 className="text-[50px] md:text-[120px] 2xl:text-[189px] leading-[50px] md:leading-[125px]  2xl:leading-[192px] font-oswald uppercase">
-                        I Am A Creative
+                        I Am A Web
                         <br className="invisible md:visible" />
-                        Designer
+                        Developer
                     </h1>
                 </motion.div>
                 {/* BIG HEADING END */}
 
                 {/* INTRO START */}
                 <motion.div
-                    className="flex flex-col mb-10 text-center md:text-left text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] relative"
+                    className="flex flex-col mb-10 text-center md:text-left text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] relative top-[-10px]"
                     initial={{ y: 300, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.7, delay: 0.25 }}
                 >
                     <div className="font-light mb-4">
                         👋 Hi, I Am{" "}
-                        <span className="font-semibold">John Doe</span>
+                        <span className="font-semibold">Syed Owais</span>
                     </div>
                     <div className="max-w-[510px]">
-                        I create and maintain modern websites and applications.
-                        I solve all your business problems. Lorem Ipsum is
-                        simply dummy text of the printing and typesetting
-                        industry.
+                    As a web developer, I'm working on front-end development, back-end development, or full-stack development.
                     </div>
                 </motion.div>
                 {/* INTRO END */}
@@ -117,7 +114,7 @@ const HeroBanner = () => {
                 >
                     {/* START */}
                     <div className="flex items-center gap-3">
-                        <div className="text-[80px] font-light">80+</div>
+                        <div className="text-[80px] font-light">10+</div>
                         <div className="leading-[22px]">
                             SUCCESSFULLY
                             <br />
@@ -130,7 +127,7 @@ const HeroBanner = () => {
 
                     {/* START */}
                     <div className="flex items-center gap-3">
-                        <div className="text-[80px] font-light">15+</div>
+                        <div className="text-[80px] font-light">1+</div>
                         <div className="leading-[22px]">
                             YEARS OF
                             <br />
