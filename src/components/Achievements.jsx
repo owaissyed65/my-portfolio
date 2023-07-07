@@ -20,13 +20,16 @@ const Achievements = () => {
                     <div className="flex items-center text-white relative">
                         {/* START */}
                         <div className="flex items-center justify-center text-center flex-col gap-3 lg:gap-6">
-                            <div className="text-[34px] md:text-[50px] lg:text-[60px] xl:text-[70px] 2xl:text-[80px] font-light flex">
+                            <div className="text-[34px] md:text-[25px] lg:text-[60px] xl:text-[70px] 2xl:text-[80px] font-light flex">
                                 <NumInc num={item.year} />+
                             </div>
                             <div
                                 className="text-[14px] lg:text-[18px] leading-[18px] lg:leading-[22px] text-[#AAAAAA] md:text-white"
+                                // dangerouslySetInnerHTML={{
+                                //     __html: item.description,
+                                // }}
                                 dangerouslySetInnerHTML={{
-                                    __html: item.description,
+                                    __html: item.description
                                 }}
                             />
                         </div>

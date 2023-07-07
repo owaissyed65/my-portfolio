@@ -37,8 +37,7 @@ const Testimonials = () => {
                         Client Says
                     </div>
                     <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
+                        Client says about me
                     </div>
                 </Div>
                 {/* SECTION HEADING END */}
@@ -50,74 +49,21 @@ const Testimonials = () => {
                         <div className="text-black flex items-center flex-col px-[25px] md:px-[50px] py-[50px]">
                             <div className="mb-[25px]">
                                 <img
-                                    src="https://i.pravatar.cc/300"
+                                    src=""
+                                    alt="image..."
                                     className="w-[80px] h-[80px] max-w-[80px] rounded-full"
                                 />
-                                <div className="font-bold">John Doy</div>
+                                <div className="font-bold">Syed Nawaz</div>
                                 <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
                                     Client
                                 </div>
                             </div>
                             <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur.
+                               He is a good developer with passionate work. He really provide me a better work than anyone with good communication and having good coding skills
                             </div>
                         </div>
                         {/* SLIDE END */}
-                        {/* SLIDE START */}
-                        <div className="text-black flex items-center flex-col px-[25px] md:px-[50px] py-[50px]">
-                            <div className="mb-[25px]">
-                                <img
-                                    src="https://i.pravatar.cc/300"
-                                    className="w-[80px] h-[80px] max-w-[80px] rounded-full"
-                                />
-                                <div className="font-bold">John Doy</div>
-                                <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
-                                    Client
-                                </div>
-                            </div>
-                            <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur.
-                            </div>
-                        </div>
-                        {/* SLIDE END */}
-                        {/* SLIDE START */}
-                        <div className="text-black flex items-center flex-col px-[25px] md:px-[50px] py-[50px]">
-                            <div className="mb-[25px]">
-                                <img
-                                    src="https://i.pravatar.cc/300"
-                                    className="w-[80px] h-[80px] max-w-[80px] rounded-full"
-                                />
-                                <div className="font-bold">John Doy</div>
-                                <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
-                                    Client
-                                </div>
-                            </div>
-                            <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur.
-                            </div>
-                        </div>
-                        {/* SLIDE END */}
+                      
                     </Carousel>
                 </Div>
                 {/* CAROUSEL END */}

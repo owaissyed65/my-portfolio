@@ -32,7 +32,7 @@ const Portfolio = () => {
             {/* SECTION HEADING END */}
 
             {/* FILTER TAGS START */}
-            <Div className="flex justify-start md:justify-center gap-[10px] mb-[50px] overflow-auto">
+            <Div className="flex justify-start md:justify-center gap-[10px] mb-[50px] overflow-auto ">
                 {filters.map((item, index) => (
                     <div
                         key={index}
@@ -52,20 +52,23 @@ const Portfolio = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {projectData.map((item, index) => {
                     return (
-                        <Div
-                            key={index}
-                            className="flex flex-col gap-4 cursor-pointer"
-                        >
-                            <div className="bg-black rounded-[20px] aspect-video overflow-hidden">
-                                <img
-                                    src={item.image}
-                                    className="transition-transform hover:-translate-y-[25%] hover:duration-2500 ease-linear"
-                                />
-                            </div>
-                            <div className="text-[20px] 2xl:text-[24px] text-[#CCCCCC] text-center">
-                                {item.name}
-                            </div>
-                        </Div>
+                        <a href={item.link} target="_blank">
+                            <Div
+                                key={index}
+                                className="flex flex-col gap-4 cursor-pointer"
+                            >
+
+                                <div className="bg-black rounded-[20px] aspect-video overflow-hidden">
+                                    <img
+                                        src={item.image}
+                                        className="transition-transform hover:-translate-y-[25%] hover:duration-[800ms] ease-linear w-[100%] h-[100%]"
+                                    />
+                                </div>
+                                <div className="text-[20px] 2xl:text-[24px] text-[#CCCCCC] text-center">
+                                    {item.name}
+                                </div>
+                            </Div>
+                        </a>
                     );
                 })}
             </div>

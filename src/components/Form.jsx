@@ -6,39 +6,35 @@ import Div from "./Div";
 
 const Form = () => {
     const [userInput, setUserInput] = useState({});
-    const [loading, setLoading] = useState(false);
 
     const formSubmitHandler = (e) => {
         e.preventDefault();
-        setLoading(true);
 
         // Below credentials are required to link your email id with contact form you can create your credentials in emailjs.com
-        send(
-            "service_90poqdu", // Service ID
-            "template_w11ktya", // Template ID
-            userInput,
-            "ROc9ugRqxe7aQJa95" // Public Key - https://dashboard.emailjs.com/admin/account
+        toast.promise(
+            async () => {
+                await send(
+                    "service_72vhcsr", // Service ID
+                    "template_w11ktya", // Template ID
+                    userInput,
+                    "ROc9ugRqxe7aQJa95" // Public Key - https://dashboard.emailjs.com/admin/account
+                )
+            },
+            {
+                pending: 'Email is sending....',
+                success: 'Email is send successfully👌',
+                error: 'Email error occurred 🤯'
+            },
+            {
+                autoClose: 3000,
+                position: 'bottom-left',
+                pauseOnHover: false
+            }
         )
-            .then((response) => {
-                console.log("SUCCESS!", response.status, response.text);
-                formSuccess();
-                setLoading(false);
-            })
-            .catch((err) => {
-                console.log("FAILED...", err);
-                setLoading(false);
-            });
+
+        setLoading(false);
+        setUserInput({})
     };
-
-    const formSuccess = () => {
-        toast(
-            "Thanks for submitting your Query, I will get back to you shortly."
-        );
-
-        // Resetting Form
-        document.getElementById("queryForm").reset();
-    };
-
     const onChange = (e) => {
         let obj = { ...userInput, [e.target.name]: e.target.value };
         setUserInput(obj);
@@ -47,23 +43,6 @@ const Form = () => {
     return (
         <Div className="max-w-[1200px] mx-auto">
             <ToastContainer />
-
-            {/* LOADER START */}
-            {loading && (
-                <div className="w-full h-full absolute bg-white/[.5] top-0 left-0 flex justify-center items-center">
-                    <svg className="spinner" viewBox="0 0 50 50">
-                        <circle
-                            className="path"
-                            cx="25"
-                            cy="25"
-                            r="20"
-                            fill="none"
-                            strokeWidth="5"
-                        ></circle>
-                    </svg>
-                </div>
-            )}
-            {/* LOADER START */}
 
             <form
                 id="queryForm"
