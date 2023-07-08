@@ -31,7 +31,7 @@ export const useFellorHirePointer = (ref) => {
             const element = ref.current;
             const x = clientX - (element.offsetLeft) - element.offsetWidth - 435
             const y = clientY - element.offsetTop - element.offsetHeight - 50;
-            console.log(y)
+        
             if (x > 220 && y && 250 ) {
                 return;
             }
