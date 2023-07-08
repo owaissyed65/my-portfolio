@@ -6,6 +6,7 @@ import flag from "../assets/paklogo.png";
 import pe1 from "../assets/sec-2-p-e-1.png";
 import pe2 from "../assets/sec-2-p-e-2.png";
 import Div from "./Div";
+import { scrollTo } from "../helper";
 
 const AboutMe = () => {
     const { scrollY } = useScroll();
@@ -40,19 +41,25 @@ const AboutMe = () => {
 
                 {/* PARAGRAPH START */}
                 <Div className="max-w-[759px] 2xl:max-w-[959px] text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] mb-[20px] md:mb-[30px] 2xl:mb-[50px] relative">
-                    Pakistan is home to a talented and diverse population, with a growing number of individuals pursuing careers in the field of web development. As a web developer based in Pakistan, you have the opportunity to tap into this rich pool of talent and contribute to the country's thriving technology industry. Whether you specialize in front-end development, back-end development, or full-stack development, you have the ability to build websites and applications that have a meaningful impact on users around the world.
+                    Hello, everyone! My name is M. Owais, and I am a passionate developer based in Pakistan. With over 1 year of experience, I have honed my skills and become proficient in various frameworks, including MERN stack and more. My journey as a developer has been fueled by my unwavering passion and determination to turn my dreams into reality.
                 </Div>
                 {/* PARAGRAPH END */}
 
                 {/* PARAGRAPH START */}
                 <Div className="max-w-[759px] 2xl:max-w-[959px] text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] mb-[20px] md:mb-[30px] 2xl:mb-[50px] relative">
-                    As a web developer in Pakistan, you have access to a variety of resources that can help you stay up-to-date on the latest trends and technologies in the field. There are numerous online communities and forums where you can connect with other developers, share ideas, and collaborate on projects. You can also attend local meetups and conferences to network with industry professionals and gain valuable insights into the industry.
+                    Speaking of dreams, I have a vision that I strive to achieve in every situation. Regardless of the challenges I face, I am committed to reaching my goals and surpassing expectations. I believe in continuous growth, which is why I'm always seeking new opportunities to expand my knowledge and expertise.
                 </Div>
                 {/* PARAGRAPH END */}
 
                 {/* PARAGRAPH START */}
                 <Div className="max-w-[759px] 2xl:max-w-[959px] text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] relative">
-                    As a web developer in Pakistan, you have the potential to make a real difference in the lives of people around the world by creating innovative and impactful digital experiences. With a supportive community, access to cutting-edge technologies, and a rapidly growing industry, the future looks bright for web developers in Pakistan.
+                    If you are looking for a dedicated developer who can meet your requirements with precision and excellence, then look no further! I would be thrilled to collaborate with you. Let's bring your vision to life together.
+                </Div>
+                {/* PARAGRAPH END */}
+                {/* PARAGRAPH START */}
+                <br />
+                <Div className="max-w-[759px] 2xl:max-w-[959px] text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] relative">
+                    Please feel free to reach out to me. I eagerly await your contact and the chance to discuss how I can contribute to your projects. Thank you!" <span className="underline text-blue-700 cursor-pointer font-medium" onClick={()=>scrollTo('contact')}>Contact me now</span>
                 </Div>
                 {/* PARAGRAPH END */}
             </Wrapper>

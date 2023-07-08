@@ -6,11 +6,13 @@ import man from "../assets/man.png";
 import externalLinkIcon from "../assets/external-link-icon.png";
 import gmailIcon from "../assets/email-icon.png";
 import { scrollTo } from "../helper";
-import { useFollowPointer } from "./useFollowPointer";
+import { useFellorHirePointer, useFollowPointer } from "./useFollowPointer";
 
 const HeroBanner = () => {
     const ref = useRef(null);
+    const hireRef = useRef(null)
     const { x, y } = useFollowPointer(ref);
+    const { x: x1, y: y1 } = useFellorHirePointer(hireRef);
     return (
         <div
             id="hero"
@@ -100,7 +102,7 @@ const HeroBanner = () => {
                         <span className="font-semibold">Syed Owais</span>
                     </div>
                     <div className="max-w-[510px]">
-                    As a web developer, I'm working on front-end development, back-end development, or full-stack development.
+                        As a web developer, I'm working on front-end development, back-end development, or full-stack development.
                     </div>
                 </motion.div>
                 {/* INTRO END */}
@@ -148,9 +150,14 @@ const HeroBanner = () => {
                     <img src={man} alt="" />
 
                     {/* HIRE ME BUTTON START */}
-                    <div
-                        className="absolute top-[140px] -right-10 2xl:top-[240px] 2xl:-right-10 w-[140px] h-[140px] rounded-full bg-white/[0.7] flex flex-col justify-center items-center gap-2 backdrop-blur-sm cursor-pointer transition-transform scale-[0.65] md:scale-100 active:scale-[0.55] md:active:scale-90"
-                        onClick={() => scrollTo("contact")}
+                    <motion.div
+                        className="absolute top-[100px] left-[500px] 2xl:top-[240px] 2xl:-right-10 w-[150px] h-[150px] rounded-full bg-white/[0.7] flex flex-col justify-center items-center gap-2 backdrop-blur-sm cursor-pointer transition-transform scale-[0.65] md:scale-100 active:scale-[0.55] md:active:scale-90 "
+                        
+                        onClick={() => {
+                            scrollTo("contact")
+                        }}
+                        ref={hireRef}
+                        animate={{ x: x1,y:y1 }}
                     >
                         <img
                             src={externalLinkIcon}
@@ -158,7 +165,7 @@ const HeroBanner = () => {
                             className="w-[15px]"
                         />
                         <div className="text-black">Hire Me</div>
-                    </div>
+                    </motion.div>
                     {/* HIRE ME BUTTON END */}
                 </motion.div>
                 {/* PERSON BLOCK END */}

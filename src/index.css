@@ -25,9 +25,23 @@
     box-sizing: border-box;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
+::-webkit-scrollbar {
+    width: 10px; /* width of the scrollbar */
+    
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #111111; /* background color */
+
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* color of the thumb */
+    background: linear-gradient(236.22deg, #ff3c47 -3.32%, #eec850 12.21%, #3257ed 73.4%);
+    border-radius: 6px; /* roundness of the thumb */
+
+  }
+  
 
 .sec-1-bg-gradient-1-desktop {
     background: linear-gradient(236.22deg,

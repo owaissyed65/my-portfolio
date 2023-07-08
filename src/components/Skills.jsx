@@ -16,6 +16,7 @@ import sk8 from "../assets/sk-8.png";
 import sk9 from "../assets/sk-9.png";
 import sk10 from "../assets/sk-10.png";
 import sk11 from "../assets/sk-11.png";
+import sk15 from "../assets/sk-15.png";
 import pattern from "../assets/heading-pattern.png";
 import pe1 from "../assets/sec-3-p-e-1.png";
 import pe2 from "../assets/sec-3-p-e-2.png";
@@ -40,7 +41,7 @@ const Skills = () => {
             {/* BACKGROUND ELEMENTS END */}
             <Wrapper>
                 {/* SKILL ICONS START */}
-                <Div className="grid grid-cols-4 gap-3 md:grid-cols-7 relative  ">
+                <Div className="grid grid-cols-4 gap-3 md:grid-cols-8 relative  ">
                     <SkillIcon path={sk1} />
                     <SkillIcon path={sk2} />
                     <SkillIcon path={sk3} />
@@ -48,6 +49,7 @@ const Skills = () => {
                     <SkillIcon path={sk9} />
                     <SkillIcon path={sk10} />
                     <SkillIcon path={sk11} />
+                    <SkillIcon path={sk15} />
                 </Div>
                 {/* SKILL ICONS END */}
 
