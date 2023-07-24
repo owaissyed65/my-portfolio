@@ -45,7 +45,7 @@ const Footer = () => {
                         </ul>
                         <div className="flex gap-1 items-center">
                             <div className="text[20px]">Connect Me Through:</div>
-                            <a href="https://www.linkedin.com/in/syed-owais-029a32244" target="_blank"><AiFillLinkedin className="flex justify-center items-center text-blue-800 cursor-pointer hover:text-blue-900" size={24} /></a>
+                            <a href="https://www.linkedin.com/in/muhammad-owais-029a32244" target="_blank"><AiFillLinkedin className="flex justify-center items-center text-blue-800 cursor-pointer hover:text-blue-900" size={24} /></a>
                             <a href="https://github.com/owaissyed65" target="_blank"><AiOutlineGithub className="flex justify-center items-center text-black cursor-pointer hover:text-blue-900" size={24} /></a>
                         </div>
                     </div>
