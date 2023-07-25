@@ -5,6 +5,7 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollUp from "./components/ScrollUp";
+import MYCv from "./components/MyCv";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <Contact />
             <Footer />
             <ScrollUp />
+            <MYCv/>
         </div>
     );
 }
