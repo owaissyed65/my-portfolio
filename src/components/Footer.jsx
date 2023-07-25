@@ -6,7 +6,7 @@ import { scrollTo } from "../helper";
 import { AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai'
 const Footer = () => {
     return (
-        <div className="bg-[#F2F2F2]">
+        <div className="bg-[#F2F2F2] md:h-[250px] h-[300px]">
             <Wrapper>
                 {/* NAVBAR START */}
                 <div className="flex flex-col md:flex-row items-center justify-between gap-5 2xl:mt-[63px] relative text-[#111111] border-t border-[#CCCCCC] py-10">
